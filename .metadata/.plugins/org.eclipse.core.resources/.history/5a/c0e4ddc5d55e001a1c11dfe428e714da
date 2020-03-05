@@ -1,0 +1,36 @@
+package ARRAYMedia;
+
+import java.util.Scanner;
+
+public class MediaPares {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	float sumPar = 0, sumImpar = 0; 
+	
+	int cont = 0, contP =0, contI = 0;
+	float [] numeros = new float [10];
+	Scanner sc = new Scanner(System.in);
+
+	
+	for(cont = 0; cont < numeros.length;cont++) {
+		System.out.println("Introduzca un numero");
+		numeros[cont] = sc.nextFloat();
+	}
+	
+	for(cont = 0; cont < 10; cont++) {
+		if((cont % 2) == 0) {
+			sumPar = sumPar + numeros[cont];
+			contP++;
+		}else {
+			sumImpar = sumImpar + numeros[cont];
+			contI++;
+		}
+	}
+	sumPar = sumPar / contP;
+	sumImpar = sumImpar / contI;
+	System.out.println("Media de numeros positivos "+sumPar);
+sc.close();
+}
+}

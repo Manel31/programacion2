@@ -1,0 +1,9 @@
+package ARRAYMedia;
+
+import java.util.Scanner;
+
+public class MediaPares {
+
+	Scanner sc = new Scanner(System.in);
+	int []  = new numeros int[10];
+}

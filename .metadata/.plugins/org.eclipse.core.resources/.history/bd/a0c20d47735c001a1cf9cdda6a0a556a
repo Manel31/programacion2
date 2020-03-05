@@ -1,0 +1,23 @@
+package ARRAYMedia;
+
+import java.util.Scanner;
+
+public class MediaPares {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	int contPar = 0, cont = 0;
+	Scanner sc = new Scanner(System.in);
+	int [] numeros = new int [10];
+	
+	System.out.println("Introducir 10 numeros");
+	numeros[cont] = sc.nextInt();
+	for(cont = 0; cont < 10; cont++) {
+		if(cont % 2 == 0) {
+			contPar = contPar + numeros[cont];
+		}
+	}
+sc.close();
+}
+}
