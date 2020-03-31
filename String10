@@ -1,0 +1,31 @@
+package String10;
+
+import java.util.Scanner;
+
+public class String10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		char letra;
+		
+		System.out.println("El String introducido por el usuario es:");
+		Scanner sc = new Scanner(System.in);
+		String frase = sc.nextLine().toLowerCase();
+		frase = frase.trim();
+		
+		System.out.println("Introduzca el carácter del que desea contar cuantas veces aparece: ");
+		letra = sc.next().charAt(0);
+		char[] fraseArray = frase.toCharArray();
+		
+		int cont2 = 0;
+		
+		for(int cont = 0; cont < fraseArray.length-1; cont++) {
+			if(fraseArray[cont] == letra) {
+				cont2 ++;
+			}
+		}
+		System.out.println("El caracter "+letra+" aparece "+cont2+" vez/veces en la frase introducida");
+	}
+
+}
